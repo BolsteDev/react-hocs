@@ -1,0 +1,62 @@
+{
+  "name": "react-hocs",
+  "version": "1.0.0",
+  "description": "Higher Order Component Utilities for React Components",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && npm run build:dist",
+    "build:dist": "babel src --ignore '*.test.js' -d dist",
+    "docs": "jsdoc:perFile 'src/**/*.js' -i 'src/**/*.test.js' -c jsdoc.json",
+    "docs:watch": "nodemon --watch src --exec 'npm run docs'",
+    "test": "gulp test",
+    "test:watch": "nodemon --watch src --exec 'npm run test'",
+    "lint": "gulp lint"
+  },
+  "repository": {
+    "url": "git+https://github.com/BolsteDev/react-hocs.git",
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "Ivan Montiel <imontiel@bolste.com> (https://github.com/imontiel)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BolsteDev/react-hocs/issues"
+  },
+  "homepage": "https://github.com/BolsteDev/react-hocs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-bolste": "^1.0.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "enzyme": "^2.7.0",
+    "eslint": "^3.12.2",
+    "eslint-config-bolste": "^1.0.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-sort-class-members": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-util": "^3.0.7",
+    "isparta": "^4.0.0",
+    "jsdoc": "^3.4.3",
+    "jsdoc-babel": "^0.3.0",
+    "jsdoc-memosa": "^1.1.0",
+    "jsdoc-to-markdown": "^2.0.1",
+    "jsdom": "^9.9.1",
+    "nodemon": "^1.11.0",
+    "react": "^15.4.1",
+    "react-addons-test-utils": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "bolste"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+}
