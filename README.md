@@ -1,4 +1,7 @@
 # react-hocs
+
+[![CircleCI](https://circleci.com/gh/BolsteDev/react-hocs.svg?style=svg)](https://circleci.com/gh/BolsteDev/react-hocs)
+
 Higher Order Component Utilities for React Components
 
 ## Installation
