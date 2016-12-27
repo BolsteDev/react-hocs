@@ -18,8 +18,7 @@ class MockWrapper extends Component {
   }
 }
 
-// eslint-ignore react/no-multi-comp
-class MockComponent extends Component {
+class MockComponent extends Component { // eslint-disable-line react/no-multi-comp
   static propTypes = {
     children: node,
   }
