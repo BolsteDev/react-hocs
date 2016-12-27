@@ -1,5 +1,3 @@
-import React from 'react';
-
 /**
  * Use a flat structure to bind many connect statements to a component
  * instead of nesting them in a deep callback structure

@@ -1,13 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 import hocFactory from './hocFactory';
 
-const { node } = PropTypes;
-
 class Mock extends Component {
   render() {
-    console.log(this.props);
     return (
       <div {...this.props} />
     );
